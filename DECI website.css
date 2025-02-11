@@ -1,0 +1,119 @@
+@keyframes slidein {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #373737;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #373737b3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background: linear-gradient(to right, rgb(0,162,255), rgb(69,214,202));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.wh {
+    animation: slidein 1 ease-in 0 1 normal none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    font-size: larger;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.welcome {
+    font-size: x-large;
+    color: white;
+    cursor: default;
+    padding: 2px;
+}
+
+img {
+    width: 100%;
+    height: 790px;
+}
+
+.btn {
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+    border-top: 3px solid yellow;
+    border-bottom: 3px solid yellow;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+footer {
+    border-top: 2px solid white;
+}
+footer h2 {
+    color: white;
+    border-bottom: 2px dotted cyan;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+footer ul {
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+footer iframe {
+    width: 100%;
+    height: 780px;
+}
